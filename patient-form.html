@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evergreen Family Medicine</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Evergreen Family Medicine</h1>
+        <p id="date"></p>
+    </div>
+
+    <!-- FORM START -->
+    <form action="thankyou.html">
+
+        <h2>Patient Registration</h2>
+
+        <table>
+
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" maxlength="30" required></td>
+
+                <td>Middle Initial:</td>
+                <td><input type="text" maxlength="1"></td>
+
+                <td>Last Name:</td>
+                <td><input type="text" maxlength="30" required></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+
+                <td>User ID:</td>
+                <td><input type="text" maxlength="20"></td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <!-- CHECKBOXES -->
+        <h3>Medical History</h3>
+
+        <label><input type="checkbox"> Diabetes</label>
+        <label><input type="checkbox"> Asthma</label>
+        <label><input type="checkbox"> Hypertension</label>
+        <label><input type="checkbox"> COVID-19</label>
+        <label><input type="checkbox"> Allergies</label>
+
+        <br><br>
+
+        <!-- RADIO BUTTONS -->
+        <h3>Gender</h3>
+
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Other</label>
+
+        <br><br>
+
+        <!-- TEXTAREA -->
+        <h3>Symptoms</h3>
+
+        <textarea rows="4" cols="50"></textarea>
+
+        <br><br>
+
+        <!-- SLIDER -->
+        <h3>Health Rating</h3>
+
+        1 <input type="range" min="1" max="10"> 10
+
+        <br><br>
+
+        <!-- BUTTONS -->
+        <input type="reset" value="Clear Form">
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Evergreen Family Medicine</p>
+        <p>Contact Us</p>
+    </div>
+
+    <!-- JAVASCRIPT DATE -->
+    <script>
+        document.getElementById("date").innerHTML =
+            "Today is: " + new Date().toDateString();
+    </script>
+
+</body>
+</html>
